@@ -48,7 +48,7 @@ Para ejecutar el proyecto en tu máquina local, sigue estos pasos:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tu_usuario/actividades-aplicaciones-hibridas.git
+   git clone https://github.com/leo-dillon/aplicacionesHibridas.git
 2. Navega a la carpeta del repositorio
    ```bash
     cd aplicacionesHibridas
