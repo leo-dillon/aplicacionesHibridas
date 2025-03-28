@@ -1,5 +1,5 @@
 const fs = require("node:fs/promises")
-const path = "./notas.json"
+const path = "../notas.json"
 class ProductManger{
     products = [];
     constructor(products = []){

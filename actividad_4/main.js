@@ -24,7 +24,7 @@ fs.readFile(path, function(err, data){
     }
 })
 setTimeout(() => {
-    fs.writeFile(path, data, function(err){
+    fs.writeFile(path, data, (err) => {
         if(err){
             console.error('Ocurrió un error');
         } else {
