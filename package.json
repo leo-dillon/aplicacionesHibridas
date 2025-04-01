@@ -1,0 +1,13 @@
+{
+  "name": "aplicacioneshibridas",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene las actividades realizadas durante el curso de **Aplicaciones Híbridas** en el **Instituto Da Vinci**. Las actividades cubren temas clave relacionados con el desarrollo de aplicaciones híbridas utilizando tecnologías como Node.js, Express, MongoDB, React.js, y más.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
