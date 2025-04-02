@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peliculas</title>
+</head>
+<script type="module">
+    fetch('http://localhost:3000/movies')
+        .then( res => res.json())
+        .then( data => {
+            const html = data.map(movie => {
+                return `
+                    <article>
+                        <img src="${movie.poster}" alt="${movie.title}">
+                        <h2> ${movie.title} </h2>
+                        <p> ${movie.director} </p>
+                        <p> ${movie.year} </p>
+                        <p> ${movie.rate} </p>
+                    </article>
+                `
+            }).join("")
+            document.querySelector('main').innerHTML = html
+        })
+</script>
+<body>
+    <main>
+        
+    </main>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+    }
+    main {
+        width: 100%;
+        padding: 32px   ;
+        display: flex;
+        flex-wrap: wrap ;
+        gap: 24px;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 300px;
+        padding: 12px;
+        border: 1px solid black;
+        border-radius: 24px;
+    }
+    article img{
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+</style>
